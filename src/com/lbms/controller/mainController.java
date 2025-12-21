@@ -77,4 +77,6 @@ public class mainController {
     }
 
     // Toggle password visibility Login Page ends here
+    // Toggle password visibility Login Page ends here
+
 }
