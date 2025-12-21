@@ -1,0 +1,18 @@
+/* -------------------- Login Button Hover -------------------- */
+
+#LoginBtn:hover {
+    -fx-text-fill: white;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: all 0.2s ease-in-out;
+}
+
+#FgtPwTxt, #RegTxt {
+    -fx-transition: all 0.2s ease;
+}
+
+#FgtPwTxt:hover, #RegTxt:hover {
+    -fx-fill: #1E3A4A;
+}
+
+/* -------------------- Login Button Hover End -------------------- */
