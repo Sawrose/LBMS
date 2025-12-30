@@ -1,13 +1,13 @@
 package com.lbms.model;
 
-public class users {
+public class User {
 
     private final int id;
     private String username;
     private String role;
 
     // Constructor
-    public users(int id, String username, String role) {
+    public User(int id, String username, String role) {
         this.id = id;
         this.username = username;
         this.role = role;

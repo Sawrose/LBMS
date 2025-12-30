@@ -5,6 +5,8 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Objects;
+
 public class Main extends Application {
 
     @Override
@@ -12,15 +14,16 @@ public class Main extends Application {
         try {
             //  Create loader with FXML
             FXMLLoader loader = new FXMLLoader(
-                    getClass().getResource("/fxml/mainView.fxml")
+                    getClass().getResource("/fxml/auth/LoginView.fxml")
             );
 
             //  Create scene
             Scene scene = new Scene(loader.load());
 
-            //  Attach CSS
-            scene.getStylesheets().add(
-                    getClass().getResource("/css/style.css").toExternalForm()
+            scene.getStylesheets().addAll(
+                    Objects.requireNonNull(getClass().getResource("/css/style.css")).toExternalForm(),
+                    Objects.requireNonNull(getClass().getResource("/css/rightPaneButton.css")).toExternalForm(),
+                    Objects.requireNonNull(getClass().getResource("/css/LeftPaneButton.css")).toExternalForm()
             );
 
             //  Stage settings

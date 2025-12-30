@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="950.0" style="-fx-background-color: #1E3A4A;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lbms.controller.dashboard.DashboardHomeController">
+
+    <children>
+        <!-- Left Logo -->
+        <ImageView fx:id="dashLeftImg" fitHeight="101.0" fitWidth="114.0" layoutX="46.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/b.png" />
+            </image>
+        </ImageView>
+
+        <!-- Text Labels -->
+        <Text fx:id="coreTxtDash" layoutX="78.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Core">
+            <font>
+                <Font name="Californian FB Bold" size="20.0" />
+            </font>
+            <effect>
+                <Shadow blurType="ONE_PASS_BOX" height="16.95" radius="4.9075" width="4.68" />
+            </effect>
+        </Text>
+
+        <Text fx:id="TechnologiesTextDash" layoutX="42.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Technologies">
+            <font>
+                <Font name="Californian FB Bold" size="20.0" />
+            </font>
+            <effect>
+                <Shadow blurType="ONE_PASS_BOX" height="16.95" radius="4.9075" width="4.68" />
+            </effect>
+        </Text>
+
+        <Text fx:id="IncTextDash" layoutX="83.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inc.">
+            <font>
+                <Font name="Californian FB Bold" size="20.0" />
+            </font>
+            <effect>
+                <Shadow blurType="ONE_PASS_BOX" height="16.95" radius="4.9075" width="4.68" />
+            </effect>
+        </Text>
+
+        <!-- VBox for left panel buttons -->
+        <VBox layoutX="24.0" layoutY="196.0" spacing="20">
+            <children>
+                <Button fx:id="DashLeftPannelDashboard" onAction="#DboardDashButClickHandle" prefHeight="40.0" prefWidth="150.0" styleClass="leftpanecustom-button" text="Dashboard">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <image>
+                                <Image url="@../../images/dashboard.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="DashLeftPannelLibrarian" onAction="#DboardLibButClickHandle" prefHeight="40.0" prefWidth="150.0" styleClass="leftpanecustom-button" text="Librarian">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <image>
+                                <Image url="@../../images/librarian.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="DashLeftPannelBooks" onAction="#DboardBooksButClickHandle" prefHeight="40.0" prefWidth="150.0" styleClass="leftpanecustom-button" text="Books">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <image>
+                                <Image url="@../../images/books.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="DashLeftPannelStudents" onAction="#DboardStdtButClickHandle" prefHeight="40.0" prefWidth="150.0" styleClass="leftpanecustom-button" text="Students">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <image>
+                                <Image url="@../../images/student.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="DashLeftPannelReport" onAction="#DboardRepoButClickHandle" prefHeight="40.0" prefWidth="150.0" styleClass="leftpanecustom-button" text="Reports">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <image>
+                                <Image url="@../../images/report.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+
+                <Button fx:id="DashLeftPannelLogout" onAction="#DboardLoutButClickHandle" prefHeight="40.0" prefWidth="150.0" styleClass="leftpanecustom-button" text="Log Out">
+                    <graphic>
+                        <ImageView fitHeight="20" fitWidth="20">
+                            <image>
+                                <Image url="@../../images/logout.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </children>
+        </VBox>
+
+
+        <!-- Right Panel -->
+        <Pane fx:id="dashRightPane" layoutX="208.0" layoutY="10.0" prefHeight="682.0" prefWidth="734.0" style="-fx-background-color: white; -fx-background-radius: 25;">
+            <children>
+                <Line endX="-68.0" endY="576.7" layoutX="70.0" layoutY="88.0" startX="-68.0" startY="-74.5" strokeLineCap="ROUND" strokeWidth="3.0">
+                    <effect>
+                        <Shadow />
+                    </effect>
+                </Line>
+                <ImageView fx:id="rightSideImgDash" fitHeight="32.0" fitWidth="65.0" layoutX="341.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/FrontLibrary.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+
+    </children>
+</AnchorPane>

@@ -1,0 +1,30 @@
+.leftpanecustom-button {
+    -fx-background-color: #E67E22;
+    -fx-text-fill: black;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 10;
+    -fx-font-family: Californian FB Bold;
+    -fx-border-radius: 10;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 6, 0, 0, 2);
+
+    -fx-alignment: CENTER_LEFT;
+    -fx-graphic-text-gap: 10;
+
+    /* Set button size */
+    -fx-pref-width: 150;    /* width in pixels */
+    -fx-pref-height: 40;    /* height in pixels */
+    -fx-min-width: 100;     /* optional: minimum width */
+    -fx-max-width: 200;     /* optional: maximum width */
+}
+
+.leftpanecustom-button:hover {
+    -fx-background-color: #FBBF44;
+}
+
+.leftpanecustom-button:pressed {
+    -fx-background-color: #D35400;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0, 0, 1);
+}
