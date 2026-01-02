@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.layout.Region?>
-<?import javafx.scene.text.Font?>
 
 <AnchorPane xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1"
@@ -18,69 +17,33 @@
         <VBox spacing="20" AnchorPane.topAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.bottomAnchor="0">
 
             <!-- Page Title -->
-            <Label text="Dashboard Overview">
-                <font>
-                    <Font name="Californian FB Bold" size="26" />
-                </font>
-            </Label>
+            <Label text="Dashboard Overview" style="-fx-font-size: 26px; -fx-font-weight: bold;" />
 
             <!-- Summary Cards -->
             <HBox spacing="20">
 
                 <VBox prefWidth="160" prefHeight="90"
                       style="-fx-background-color: #f5f7fa; -fx-background-radius: 25; -fx-border-radius: 25; -fx-padding: 15;">
-                    <Label text="Total Books">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
-                    <Label text="1,240">
-                        <font>
-                            <Font name="Californian FB Bold" size="22"/>
-                        </font>
-                    </Label>
+                    <Label text="Total Books" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+                    <Label text="1,240" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
                 </VBox>
 
                 <VBox prefWidth="160" prefHeight="90"
                       style="-fx-background-color: #f5f7fa; -fx-background-radius: 25; -fx-border-radius: 25; -fx-padding: 15;">
-                    <Label text="Issued Books">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
-                    <Label text="312">
-                        <font>
-                            <Font name="Californian FB Bold" size="22"/>
-                        </font>
-                    </Label>
+                    <Label text="Issued Books" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+                    <Label text="312" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
                 </VBox>
 
                 <VBox prefWidth="160" prefHeight="90"
                       style="-fx-background-color: #f5f7fa; -fx-background-radius: 25; -fx-border-radius: 25; -fx-padding: 15;">
-                    <Label text="Members">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
-                    <Label text="87">
-                        <font>
-                            <Font name="Californian FB Bold" size="22"/>
-                        </font>
-                    </Label>
+                    <Label text="Members" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+                    <Label text="87" style="-fx-font-size: 22px; -fx-font-weight: bold;" />
                 </VBox>
 
                 <VBox prefWidth="160" prefHeight="90"
                       style="-fx-background-color: #f5f7fa; -fx-background-radius: 25; -fx-border-radius: 25; -fx-padding: 15;">
-                    <Label text="Overdue" style="-fx-text-fill: #c0392b;">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
-                    <Label text="14" style="-fx-text-fill: #c0392b;">
-                        <font>
-                            <Font name="Californian FB Bold" size="22"/>
-                        </font>
-                    </Label>
+                    <Label text="Overdue" style="-fx-font-size: 14px; -fx-font-weight: bold; -fx-text-fill: #c0392b;" />
+                    <Label text="14" style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #c0392b;" />
                 </VBox>
 
             </HBox>
@@ -92,52 +55,20 @@
 
                 <VBox prefWidth="330" prefHeight="260"
                       style="-fx-background-color: #ffffff; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: #e0e0e0; -fx-padding: 15;">
-                    <Label text="Recent Activities">
-                        <font>
-                            <Font name="Californian FB Bold" size="16"/>
-                        </font>
-                    </Label>
+                    <Label text="Recent Activities" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
                     <Region prefHeight="10"/>
-                    <Label text="• Book issued to Member ID 1021">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
-                    <Label text="• Book returned (Java Basics)">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
-                    <Label text="• New member registered">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
+                    <Label text="• Book issued to Member ID 1021" style="-fx-font-size: 14px;" />
+                    <Label text="• Book returned (Java Basics)" style="-fx-font-size: 14px;" />
+                    <Label text="• New member registered" style="-fx-font-size: 14px;" />
                 </VBox>
 
                 <VBox prefWidth="330" prefHeight="260"
                       style="-fx-background-color: #ffffff; -fx-background-radius: 25; -fx-border-radius: 25; -fx-border-color: #e0e0e0; -fx-padding: 15;">
-                    <Label text="System Status">
-                        <font>
-                            <Font name="Californian FB Bold" size="16"/>
-                        </font>
-                    </Label>
+                    <Label text="System Status" style="-fx-font-size: 16px; -fx-font-weight: bold;" />
                     <Region prefHeight="10"/>
-                    <Label text="Database: Connected">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
-                    <Label text="Server: Running">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
-                    <Label text="Last Backup: Today 09:30 AM">
-                        <font>
-                            <Font name="Californian FB Bold" size="14"/>
-                        </font>
-                    </Label>
+                    <Label text="Database: Connected" style="-fx-font-size: 14px;" />
+                    <Label text="Server: Running" style="-fx-font-size: 14px;" />
+                    <Label text="Last Backup: Today 09:30 AM" style="-fx-font-size: 14px;" />
                 </VBox>
 
             </HBox>

@@ -1,0 +1,5 @@
+/* Apply this font to all controls in the application */
+.root {
+    -fx-font-family: 'Californian FB'; /* your chosen font */
+    -fx-font-size: 14px;               /* optional default size */
+}

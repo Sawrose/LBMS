@@ -5,12 +5,13 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
+
 <AnchorPane prefHeight="682.0" prefWidth="734.0" style="-fx-background-color: white; -fx-background-radius: 25; -fx-border-radius: 25; -fx-padding: 20;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.lbms.controller.librarian.LibrarianHomeController">
 
     <children>
@@ -46,15 +47,20 @@
                 <padding>
                     <Insets bottom="10" left="10" right="10" top="10" />
                 </padding>
-                <TableView fx:id="librarianTable" prefHeight="400" prefWidth="700">
+
+                <TableView fx:id="librarianTable"
+                           prefHeight="433.0"
+                           prefWidth="723.0"
+                           stylesheets="@/css/tableStyles.css">
                     <columns>
-                        <TableColumn fx:id="colId" prefWidth="50" text="ID" />
-                        <TableColumn fx:id="colName" prefWidth="200" text="Name" />
-                        <TableColumn fx:id="colEmail" prefWidth="200" text="Email" />
-                        <TableColumn fx:id="colPhone" prefWidth="150" text="Phone" />
+                        <TableColumn fx:id="colName" text="Name" />
+                        <TableColumn fx:id="colRole" text="Role" />
+                        <TableColumn fx:id="colPhone" text="Phone" />
+                        <TableColumn fx:id="colActions" text="Actions" />
                     </columns>
                 </TableView>
             </VBox>
+
 
         </VBox>
     </children>
